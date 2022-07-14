@@ -1,5 +1,5 @@
 ﻿import java.util.Scanner;
-public class Main{
+public class Data{
   public static void main(String[]args){
       Scanner input = new Scanner(System.in);
       int[] data1 = new int[4];
