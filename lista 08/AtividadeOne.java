@@ -1,4 +1,4 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class AtividadeOne {
     public static void main(String[] args) {
@@ -33,17 +33,41 @@ public class AtividadeOne {
          * fatorial = n*fatorial;
          * }
          * System.out.println(fatorial);
-         */
-        int i, aux;
-        int fab;
-        for (i = 0; i <= 100; i++) {
+         
+        (Opcional)	 Imprima	 os	 primeiros	 números	 da	 série	 de	 Fibonacci	 até	 passar	 de	 100.	 A	 série	 de
+        Fibonacci	é	a	seguinte:	0,	1,	1,	2,	3,	5,	8,	13,	21,	etc.	Para	calculá-la,	o	primeiro	elemento	vale	0,	o
+        segundo	vale	1,	e	daí	por	diante.	O	n-ésimo	elemento	vale	o	(n-1)-ésimo	elemento	somado	ao	(n-2)-
+        ésimo	elemento	(ex:	8	=	5	+	3).
 
-            if (i == 0) {
-                System.out.println(i + ", ");
-            } else {
-
+        int a =0, b = 1;
+        int aux = 0;
+        int i;
+        for(i = 0; i <= 100; i++) {
+            if(aux < 100){
+                aux = a + b;
+                a = b;
+                b = aux;
+                System.out.println(aux);
             }
-
+            
         }
+        
+        Escreva	um	programa	em	que,	dada	uma	variável		x		com	algum	valor	inteiro,	temos	um
+        novo		x		de	acordo	com	a	seguinte	regra:
+        int x=13;
+        while(x > 1){
+            if(x%2 == 0){
+                x = x/2;
+                System.out.println(x);
+            }else{
+                x = 3*x+1;
+                System.out.println(x);
+                
+            }
+            */
+            
+            
+        }
+
     }
 }
